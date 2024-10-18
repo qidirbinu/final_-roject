@@ -26,3 +26,11 @@ with st.sidebar:
   island = st.selectbox('Island',('Biscoe','Dream','Torgersen'))
   gender = st.selectbox('Gender',('Male','Female'))
   bill_length_mm = st.slider('Bill length (mm)',32.1,59.6,43.9)
+
+#Create DataFrame for the input value
+  data = {'island':island,
+          'gender':gender,
+          'bill_length_mm':bill_length_mm}
+  input_df = pd.DataFrame(data, index=[0])
+  input_penguins = pd.concat([input_df,X],axis=0)
+input_penguins
