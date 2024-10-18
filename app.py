@@ -20,6 +20,7 @@ with st.expander('Data'):
 with st.expander('visualization'):
   st.scatter_chart(data=df,x='bill_length_mm',y='body_mass_g',color='species')
 
+#Data preparations
 with st.sidebar:
   st.header('input features')
   #"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
@@ -39,3 +40,10 @@ with st.expander('Input features'):
   input_df
   st.write('**Combined Penguins Data**')
 input_penguins
+
+#Encode
+encode = ['island','sex']
+df_penguins = pd.get_dummies(input_penguins,prefix=encode)
+df_penguins[:1]
+
+  
