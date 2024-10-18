@@ -1,4 +1,4 @@
-import streamlit as st
+ import streamlit as st
 import pandas as pd
 st.title('Machine learning app')
 
@@ -45,8 +45,8 @@ with st.expander('Input features'):
   input_df
   st.write('**Combined Penguins Data**')
   input_penguins
-  st.write('Encoded input penguins')
-  input_row
+  #st.write('Encoded input penguins')
+  #input_row
  
 
   
