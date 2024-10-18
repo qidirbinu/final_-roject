@@ -46,6 +46,7 @@ with st.expander('Input features'):
   st.write('**Combined Penguins Data**')
   input_penguins
   st.write('Encoded input penguins')
+  input_row
  
 
   
