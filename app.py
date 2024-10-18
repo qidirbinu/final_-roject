@@ -41,11 +41,11 @@ with st.sidebar:
   input_row = df_penguins[:1]
 
 with st.expander('Input features'):
-  st.write('**Input Penguins**')
+  st.write('**Input Penguin**')
   input_df
   st.write('**Combined Penguins Data**')
   input_penguins
   st.write('Encoded input penguins')
-  input_row
+ 
 
   
